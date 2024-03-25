@@ -22,7 +22,7 @@ func  main() {
     params["phone"] = "18721755342" //手机号码
 	
 	//设置您要发送的内容：其中“【】”中括号为运营商签名符号，多签名内容前置添加提交
-    params["msg"] =url.QueryEscape("【253云通讯】您好，您的验证码是999999")  
+    params["msg"] ="【253云通讯】您好，您的验证码是999999"
     params["report"] = "true"
     bytesData, err := json.Marshal(params)
     if err != nil {
